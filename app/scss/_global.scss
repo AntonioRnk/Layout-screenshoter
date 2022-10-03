@@ -1,0 +1,97 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    font-size: inherit;
+}
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;   
+    @extend %rub-regular;
+    color: #828282;
+    font-size: 18px;
+    line-height: 32px;
+    position: relative;
+}
+.main{
+    padding-top: 150px;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1460px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #131313;
+    font-size: 36px;
+    line-height: 43px;
+    @extend%rub-bold;
+    margin-right: 10px;
+}
+
+.title span{
+    color: #7421B0;
+}
+
+.decorative-line{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+
+    & img{
+        width: 100vw;
+    }
+}
+
+.recording-line{
+    position: absolute;
+    bottom: -244px;
+}
+
+.redactor-line{
+    position: absolute;
+    bottom: 10px;
+}
+
+.header-line{
+    position: absolute;
+    bottom: 50px;
+}
+
+.uses-line{
+    position: absolute;
+    top: 70px;
+}
+
+.join-line {
+    position: absolute;
+    bottom: -200px;
+}
